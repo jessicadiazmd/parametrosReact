@@ -11,21 +11,6 @@ import {
 function App() {
   const [num1, setNum1] = useState(0);
   const [num2, setNum2] = useState(0);
-  function sumar1() {
-    setNum1(num1 + 1);
-  }
-
-  function restar1() {
-    setNum1(num1 - 1);
-  }
-
-  function sumar2() {
-    setNum2(num2 + 1);
-  }
-
-  function restar2() {
-    setNum2(num2 - 1);
-  }
 
   function Operaciones() {
     const params = useParams();
@@ -55,12 +40,12 @@ function App() {
   return (
     <BrowserRouter>
       <p>{num1}</p>
-      <button onClick={sumar1}>Sumar</button>
-      <button onClick={restar1}>Restar</button>
+      <button onClick={setNum1(num1 + 1)}>Sumar</button>
+      <button onClick={setNum1(num1 - 1)}>Restar</button>
 
       <p>{num2}</p>
-      <button onClick={sumar2}>Sumar</button>
-      <button onClick={restar2}>Restar</button>
+      <button onClick={setNum2(num2 + 1)}>Sumar</button>
+      <button onClick={setNum2(num2 - 1)}>Restar</button>
       <div>
         <Link className="botones" to={"/operaciones/" + num1 + "/" + num2}>
           Resultados

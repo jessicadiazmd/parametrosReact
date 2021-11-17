@@ -10,6 +10,9 @@ import {
 function Saludo() {
   const params = useParams();
   return <h3>¡Hola {params.nombre}!</h3>;
+  {
+    /* return <h3>¡Hola {useParams().nombre}!</h3>; */
+  }
 }
 
 function App() {
