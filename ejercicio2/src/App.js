@@ -19,11 +19,11 @@ function App() {
 
     return (
       <>
-        <p>{num1 + num2}</p>
-        <p>{num1 - num2}</p>
-        <p>{num1 * num2}</p>
-        <p>{num1 / num2}</p>
-        <p>{num1 % num2}</p>
+        <p>Suma: {num1 + num2}</p>
+        <p>Resta: {num1 - num2}</p>
+        <p>Multiplicación: {num1 * num2}</p>
+        <p>División: {num1 / num2}</p>
+        <p>Resto: {num1 % num2}</p>
 
         <button
           onClick={() => {
