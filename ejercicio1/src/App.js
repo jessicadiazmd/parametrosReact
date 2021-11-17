@@ -9,8 +9,7 @@ import {
 
 function Saludo() {
   const params = useParams();
-  const nombre = params.nombre;
-  return <h3>¡Hola {nombre}!</h3>;
+  return <h3>¡Hola {params.nombre}!</h3>;
 }
 
 function App() {
